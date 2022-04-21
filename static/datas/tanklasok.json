@@ -1,42 +1,42 @@
 [
     {
         "id" : 1, 
-        "car" : "Skoda Octavia",
+        "car" : "Skoda Octavia / MPG-012",
         "date" : "2022-04-16",
         "litre" : 41,
         "km" : 112000
     },
     {
         "id" : 2, 
-        "car" : "Skoda Superb",
+        "car" : "Skoda Superb / REKA-01",
         "date" : "2022-04-17",
         "litre" : 46,
         "km" : 142000
     },
     {
         "id" : 3, 
-        "car" : "Skoda Fabia",
+        "car" : "Skoda Fabia / BBA-123",
         "date" : "2022-04-11",
         "litre" : 21,
         "km" : 75500
     },
     {
         "id" : 4, 
-        "car" : "Skoda Octavia",
+        "car" : "Skoda Octavia / MPG-012",
         "date" : "2022-04-19",
         "litre" : 18,
         "km" : 112650
     },
     {
         "id" : 5, 
-        "car" : "Skoda Superb",
+        "car" : "Skoda Superb / REKA-01",
         "date" : "2022-04-20",
         "litre" : 11,
         "km" : 142600
     },
     {
         "id" : 6, 
-        "car" : "Skoda Fabia",
+        "car" : "Skoda Fabia / BBA-123",
         "date" : "2022-04-20",
         "litre" : 32,
         "km" : 75800
