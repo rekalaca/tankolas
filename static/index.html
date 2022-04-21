@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600&family=Ubuntu+Condensed&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../public/style.css">
+    <title>Tankolás nyílvántartása</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>
+            Tankolásaink nyílvántartása
+        </h1>
+    </div>
+    <div id="body">
+        <div class="container kozep">
+            <div class="row">
+                <div class="col-6">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Válassz gépjárművet:</option>
+                        <option value="1">Skoda Octavia / MPG-012</option>
+                        <option value="2">Skoda Superb / REKA-01</option>
+                        <option value="3">Skoda Fabia / BBA-123</option>
+                      </select>
+
+                      <input class="form-control form-control-sm koz" type="number" placeholder="tankolt mennyiség(liter):" aria-label=".form-control-sm example">
+                      <input class="form-control form-control-sm koz" type="number" placeholder="kilométer állás:" aria-label=".form-control-sm example">
+                </div>
+                <div class="col-6 jobb">
+                    <button type="button" class="btn btn-outline-success">Új tankolás rögzítése</button><br>
+                    <button type="button" class="btn btn-outline-success koz">Tankolási adatok listája</button><br>
+                    <button type="button" class="btn btn-outline-success koz">Tankolási adatok a kiválasztott gépjárműre</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <table class="table table-striped tabla">
+            <thead>
+              <tr>
+                <th scope="col">Rendszám:</th>
+                <th scope="col">Tankolás dátuma:</th>
+                <th scope="col">Tankolt mennyiség(liter):</th>
+                <th scope="col">Kilométer állás:</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">MPG-012</th>
+                <td>2022-04-18</td>
+                <td>30</td>
+                <td>181233</td>
+                <td><button type="button" class="btn btn-warning">Módosítás</button></td>
+                <td><button type="button" class="btn btn-danger">Törlés</button></td>
+              </tr>
+              <tr>
+                <th scope="row">REKA-01</th>
+                <td>2022-04-16</td>
+                <td>45</td>
+                <td>121001</td>
+                <td><button type="button" class="btn btn-warning">Módosítás</button></td>
+                <td><button type="button" class="btn btn-danger">Törlés</button></td>
+              </tr>
+              <tr>
+                <th scope="row">BBA-123</th>
+                <td>2022-04-19</td>
+                <td>23</td>
+                <td>78965</td>
+                <td><button type="button" class="btn btn-warning">Módosítás</button></td>
+                <td><button type="button" class="btn btn-danger">Törlés</button></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <div id="footer">
+        <hr>
+        <p class="copyright">© rekalaca & balint - 2022</p>
+    </div>
+
+</body>
+
+</html>

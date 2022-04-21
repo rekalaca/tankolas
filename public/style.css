@@ -1,0 +1,56 @@
+h1 {
+    font-family: 'Epilogue', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+body{
+    font-family: 'Epilogue', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#header {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#body {
+    margin-top: 50px;
+}
+
+.koz {
+    margin-top: 5px;
+}
+
+hr {
+    width: 60%;
+  height: 1px;
+  border: 1px solid rgb(255, 111, 0);
+  background-color: rgb(255, 111, 0);
+  display: block;
+  margin: 0 auto 0 auto;
+  margin-top: 20px;
+  }
+
+  .tabla{
+      width: 60%;
+      margin: 0 auto 0 auto;
+      text-align: center;
+  }
+
+  #footer{
+      text-align: center;
+      margin-top: 30px;
+  }
+  .kozep{
+      width: 40%;
+  }
+  .jobb{
+      text-align: right;
+  }
+  .copyright {
+    width: 100%;
+    color: rgb(138, 31, 31);
+    line-height: 40px;
+    font-size: 0.7em;
+    text-align: center;
+    bottom:0;
+}
