@@ -2,9 +2,9 @@
  A views mappa index.ejs állományának renderelése, kilküldése a kliensre.
  */
 
- module.exports = (objRep) =>{
+ module.exports = (objRep,view) =>{
     return (req, res, next) =>{
-        return res.render("index", { tankolasos : res.locals.adatokRendben});
+        return res.render(view, res.locals);
     }
     
 }

@@ -1,0 +1,35 @@
+<table class="table table-striped tabla">
+    <thead>
+        <tr>
+            <th scope="col">Auto / Rendszám:</th>
+            <th scope="col">Tankolás dátuma:</th>
+            <th scope="col">Tankolt mennyiség(liter):</th>
+            <th scope="col">Kilométer állás:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% if(tankolasos) {%>
+            <tr>
+                <th scope="row">
+                    <%= %>
+                </th>
+                <td>
+                    <%= (date) %>
+                </td>
+                <td>
+                    <%= (litre) %>
+                </td>
+                <td>
+                    <%= (km) %> km
+                </td>
+                <td><button type="button" class="btn btn-warning">Módosítás</button></td>
+                <td><button type="button" class="btn btn-danger">Törlés</button></td>
+            </tr>
+            <%} else {%>
+                <div class="alert alert-danger" role="alert">
+                    Hibás adat, vagy adatok!
+                </div>
+                <%}%>
+
+    </tbody>
+</table>

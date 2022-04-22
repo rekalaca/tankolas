@@ -1,71 +1,8 @@
 <%- include("header") %>
 
-    <div id="body">
-        <div class="container kozep">
-            <form method="POST" action="/">
-                <div class="row">
-                    <div class="col-6">
-                        <select name=car class="form-select" aria-label="Default select example">
-                            <option value="" disabled="disabled">Válassz gépjárművet:</option>
-                            <option value="Skoda Octavia / MPG-012">Skoda Octavia / MPG-012</option>
-                            <option value="Skoda Superb / REKA-01">Skoda Superb / REKA-01</option>
-                            <option value="Skoda Fabia / BBA-123">Skoda Fabia / BBA-123</option>
-                        </select>
-                        <input name=date class="form-control form-control-sm koz" type="date"
-                            placeholder="dátum:" aria-label=".form-control-sm example">
-                        <input name=litre class="form-control form-control-sm koz" type="number"
-                            placeholder="tankolt mennyiség(liter):" aria-label=".form-control-sm example">
-                        <input name=km class="form-control form-control-sm koz" type="number"
-                            placeholder="kilométer állás:" aria-label=".form-control-sm example">
-                    </div>
-                    <div class="col-6 jobb">
-                        <button type="submit" class="btn btn-outline-success">Új tankolás rögzítése</button><br>
-                        <button type="button" class="btn btn-outline-success koz">Tankolási adatok listája</button><br>
-                        <button type="button" class="btn btn-outline-success koz">Tankolási adatok a kiválasztott
-                            gépjárműre</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <hr>
-        <table class="table table-striped tabla">
-            <thead>
-                <tr>
-                    <th scope="col">Auto / Rendszám:</th>
-                    <th scope="col">Tankolás dátuma:</th>
-                    <th scope="col">Tankolt mennyiség(liter):</th>
-                    <th scope="col">Kilométer állás:</th>
-                </tr>
-            </thead>
-            <tbody>
-                <% if(tankolasos) {%>
-                    <tr>
-                        <th scope="row">
-                            <%= (cars) %>
-                        </th>
-                        <td>
-                            <%= (date) %>
-                        </td>
-                        <td>
-                            <%= (litre) %>
-                        </td>
-                        <td>
-                            <%= (km) %> km
-                        </td>
-                        <td><button type="button" class="btn btn-warning">Módosítás</button></td>
-                        <td><button type="button" class="btn btn-danger">Törlés</button></td>
-                    </tr>
-                    <%} else {%>
-                        <div class="alert alert-danger kozepes" role="alert">
-                            Hibás adat, vagy adatok!
-                          </div>
-                    <%}%>
 
-            </tbody>
-        </table>
-    </div>
 
-   
+   <%- include('form') %>
 
 
 
